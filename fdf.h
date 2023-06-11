@@ -6,7 +6,7 @@
 /*   By: tuukka <tuukka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 10:18:19 by ttikanoj          #+#    #+#             */
-/*   Updated: 2023/02/23 19:04:51 by ttikanoj         ###   ########.fr       */
+/*   Updated: 2023/06/11 10:46:38 by tuukka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
-# include <mlx.h>
+# include "./mlx/mlx.h"
 # include "./libft/libft.h"
 # define WIN_W 1920
 # define WIN_H 1080

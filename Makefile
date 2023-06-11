@@ -6,7 +6,7 @@
 #    By: tuukka <tuukka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/10 16:27:12 by ttikanoj          #+#    #+#              #
-#    Updated: 2023/02/12 12:54:20 by tuukka           ###   ########.fr        #
+#    Updated: 2023/06/11 10:48:48 by tuukka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,10 +27,12 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(MAKE) -C libft
-	cc $(FLAGS) $(OBJ) -lmlx -L./libft -lft -framework OpenGL -framework AppKit -o $(NAME)
+	$(MAKE) -C mlx
+	cc $(FLAGS) $(OBJ) -Lmlx -lmlx -L./libft -lft -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	$(MAKE) clean -C libft
+	$(MAKE) clean -C mlx
 	rm -f $(OBJ)
 
 fclean: clean
